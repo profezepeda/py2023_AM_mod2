@@ -1,0 +1,57 @@
+html {
+  background-color: black;
+}
+
+.articulo {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.articulo:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.FlexContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.FlexContainer div {
+  width: 100%;
+  height: 300px;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .FlexContainer div {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .FlexContainer div {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .FlexContainer div {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    background-color: red;
+  }
+  .FlexContainer div {
+    width: 20%;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/javascript/mijavascript.js"></script>
+<title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body onload="saludar()">
+  <div class="alert alert-danger" role="alert" id="mensaje">
+    A simple primary alert—check it out!
+  </div>
+  <div class="content" id="contenido">
+    <div class="row" id="fila">
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card" id="tarjeta_1">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary" onclick="verMas()">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card" style="max-height: 200px;">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text" style="overflow: hidden;">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem fugiat inventore porro magnam
+              reprehenderit id aspernatur consequatur odit doloremque reiciendis nam aperiam voluptatum itaque ipsa
+              maiores, nesciunt officia! Porro, accusamus.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-danger" onclick="limpiar()">Limpiar</button>
+  <button class="btn btn-primary" onclick="ponerTitulo()">Cambiar Título</button>
+  <button class="btn btn-success" onclick="revisarLista()">Revisar Lista</button>
+</body>
+</html>

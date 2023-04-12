@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <style>
+    #contenido {
+      margin: 10px;
+      background-color: #ccc;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <h1 onclick="sumar(13,16)">Prueba de JS</h1>
+  <div id="botonera">
+    <button class="btn btn-primary" onclick="saludar()">Saludar</button>
+    <button class="btn btn-primary" onclick="agregarelementos()">Agregar elementos</button>
+    <button class="btn btn-warning" onclick="leerElemento()">Qué hay?</button>
+    <button class="btn btn-danger" onclick="cambiarColor()">Color</button>
+    <button class="btn btn-light" onclick="listaPersonas()" on>Personas</button>
+    <button class="btn btn-light" onclick="listarPaises()" onmouseover="listarPaises()">Paises</button>
+    <a href="#" onclick="sumar(14,14)" onmouseover="sumar(129,200)">Sumar</a>
+  </div>
+  <div id="contenido" onmouseover="colorearRojo()" onmouseout="colorearNormal()"></div>
+  <script src="assets/javascript/mijs2.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function cambiarNombre()  {
+        let nombre = document.getElementById('nombre');
+        nombre.value = 'Juanito';
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Hola</h1>
+    <img src="img/TeacherWithLaptop.jpg" alt="Profesor con laptop" width="200px">
+    <br/><br/>
+    <a href="#titulo2">Vamos al título 2</a>
+    |
+    <a href="clase2.html">Clase 2</a>
+    |
+    <a href="https://www.google.com">Google</a>
+    |
+    <a href="mailto:profezepeda@outlook.com">Email</a>
+    |
+    <a href="tel:+56999999cito">Llamar</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+    <form method="get">
+      <!-- Tabla conteniendo el formulario -->
+      <table>
+        <tr>
+          <td>
+            <label for="nombre">Nombre</label>
+          </td>
+          <td>
+            <input type="text" name="nombre" id="nombre" maxlength="15" required>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="apellido">Apellido</label>
+          </td>
+          <td>
+            <input type="text" name="apellido" id="apellido" maxlength="15" value="Pérez">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="estado_civil">Estado Civil</label>
+          </td>
+          <td>
+            <select name="estado_civil" id="estado_civil">
+              <option value="soltero">Soltero</option>
+              <option value="casado">Casado</option>
+              <option value="viudo">Viudo</option>
+              <option value="divorciado">Divorciado</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email" maxlength="100">
+          </td>
+        </tr>
+      </table>
+      <button type="submit">Enviar</button>
+      <button type="button" onclick="cambiarNombre()">Cambiar Nombre</button>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="titulo2" name="titulo2"></a>
+    <h2>Título 2</h2>
+  </body>
+</html>
