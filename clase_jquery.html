@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .external {
+      color: red
+    }
+    .current {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Título</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In vero laborum molestias eveniet aperiam, consequuntur voluptatum animi praesentium quibusdam impedit fuga! Enim tenetur porro voluptatibus placeat, necessitatibus veritatis magni? Dolor.</p>
+  <ul id="lista">
+    <li class="external">TEXTO 1</li>
+    <li class="external">TEXTO 2</li>
+    <li class="external">TEXTO 3</li>
+    <li class="external">TEXTO 4</li>
+    <li class="external current">TEXTO 5</li>
+    <li class="external">TEXTO 6</li>
+    <li class="external">TEXTO 7</li>
+    <li class="external">TEXTO 8</li>
+    <li class="external">TEXTO 9</li>
+    <li class="external">TEXTO 10</li>
+  </ul>
+  <p>Último P</p>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(
+    function() {
+      console.log("Él es el delegado !");
+    }
+  );
+
+  console.log($("li.external:first").text())
+  $("li.external:first").text("TEXTO 1 MODIFICADO")
+  $("li.external:first").css("color", "blue")
+  console.log($("li.external").get(5).innerText)
+
+  if ($("li.external").length > 100)  {
+    console.log("Hay elementos suficientes")
+  } else {
+    console.log("No hay elementos suficientes")
+  }
+
+  const $elementos_li_external = $("li.external")
+  console.log($elementos_li_external)
+
+  console.log($("ul li").filter(".current"))
+
+  $("#lista").find("li").eq(8).text("TEXTO 9 MODIFICADO")
+
+  console.log($("h1").next("p").text())
+  const $parent = $("li.current").parent()
+  console.log($parent)
+
+  const $lista = $("ul#lista").children()
+  console.log($lista)
+  $lista.each(
+    function(index, element) {
+      element.textContent = "HOLA " + (index + 1)
+      console.log(index, element)
+    }
+  )
+
+  $("li").on({
+    click: function() {
+      console.log("Click")
+    },
+    mouseenter: function() {
+      console.log("Mouse Enter", new Date())
+    },
+    mouseleave: function() {
+      console.log("Mouse Leave", new Date())
+    }
+  })
+
+</script>
